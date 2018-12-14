@@ -1,0 +1,249 @@
+<html>
+<head>
+  <title>Placement Cell NITJ</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="screen.css" />
+      <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <a href="index.html"><font size="5"> <span style="color:blue;"><b><center>Training & Placement Cell NITJ</center></b></span></font></a></br>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" >
+       <div class="header" id="myHeader">
+    <div class="container dark">
+<div class="wrapper" id="top_div">
+<div id="top_left">
+    <a><font size="6"> <span style="color:goldenrod;"><b>Placement Cell NITJ</b></span></font></br>
+     <a><font size="4.5"> <span style="color:red;">Learning Today ... Leading Tomorrow.</span></font></a>
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font size="3.5"> <span style="color: lightcoral;"><b>Choose Date</b></span></font>
+  <input type="date" id="bday">&nbsp</input><button class="but" onclick="doit(bday.value)">Search</button>&nbsp;&nbsp;
+    <a><font size="4.5"> <span style="color:red;"><b>or</b></span></font></a>&nbsp;&nbsp;
+</div>
+<div id="top_right">-->
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><font size="4"> <span style="color: red;">Welcome User !!</span></font></a>&nbsp;&nbsp;&nbsp;
+    <button  onclick="logout()" >Logout</button>
+    <!--</br>
+     <table>
+     <tr>
+                      <td>
+                      <label for-" Name"> <a><font size="3"> <span style="color:lightcoral;"><b>Student's Roll No.</b></span></font></a></label>
+                      </td>
+                      <td>
+                      <input type="text" name="N2" maxlength="8" size="8">
+                      </td>
+                     <td>
+                      <button class="but" onclick="doit(bday.value)">Search</button>
+                      </td>
+        </table>-->
+                              
+</div>
+<div id="clear">
+</div>
+</div>
+</div>
+
+</div>
+
+    
+  
+   
+
+      <br/>
+      <form>
+          </br> <center><table>
+				  
+                      <td>
+                      <label for-" Name"><b>Date (DD/MM/YYYY) </b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="N1" maxlength="18" size="18">
+                      </td>
+                    </tr>
+					<tr>
+                        <td>
+                            <label for-" Name"><b>Company Name ...</b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="N2" maxlength="18" size="18">
+                      </td>
+                    </tr>
+      <tr>
+                        <td>
+                            <label for-" Name"><b>Day (like Monday..) </b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="a" maxlength="18" size="18">
+                      </td>
+                    </tr>
+      <tr>
+                        <td>
+                            <label for-" Name"><b>Time (From-12:00 AM) </b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="b" maxlength="18" size="18">
+                      </td>
+                    </tr>
+      <tr>
+                        <td>
+                            <label for-" Name"><b>Time (to-01:00 AM) </b></label>
+                      </td>
+                      <td>
+                      <input type="text" name="c" maxlength="18" size="18">
+                      </td>
+                    </tr>
+                      </table>
+      </br>
+                     <center><a><font size="4"> <span style="color:goldenrod;"><b>Enter Student's Roll No</b></span><span style="color:red;"><b> (Max Limit 5..)</b></span></font></center></br>
+					<tr>
+                      <td>
+                      <input type="text" name="N3" maxlength="8" placeholder="1" size="8">
+                      </td>
+                        <td>
+                      <input type="text" name="N4" maxlength="8" placeholder="2" size="8">
+                      </td>
+                    </tr>
+    <tr>
+                      <td>
+                      <input type="text" name="N5" maxlength="8" placeholder="3" size="8">
+                      </td>
+                        <td>
+                      <input type="text" name="N6" maxlength="8" placeholder="4" size="8">
+                      </td>
+                    </tr>
+    <tr>
+                      <td>
+                      <input type="text" name="N7" maxlength="8" placeholder="5" size="8">
+                      </td>
+                        <!--<td>
+                      <input type="text" name="N8" maxlength="8"placeholder="6" size="8">
+                      </td>
+                    </tr>
+    <tr>
+                      <td>
+                      <input type="text" name="N9" maxlength="8" placeholder="7" size="8">
+                      </td>
+                        <td>
+                      <input type="text" name="N10" maxlength="8" placeholder="8" size="8">
+                      </td>
+                    </tr>
+    <tr>
+                      <td>
+                      <input type="text" name="N11" maxlength="8" placeholder="9" size="8">
+                      </td>
+                        <td>
+                      <input type="text" name="N12" maxlength="8" placeholder="10" size="8">
+                      </td>
+                    </tr>-->
+    </table></br></br>
+<font size="3"> <span style="color: red"><b>* Please check all details carefully !!</b></span></font> 
+<br/></br>
+                  <input class="button" type="button" value="submit"  onclick="javascript:adddata(N1.value,N2.value,N3.value,N4.value,N5.value,N6.value,N7.value,a.value,b.value,c.value)" /></center>
+                  <br/><br/><br/>
+	<!--<select name ="not" id="month" class="required-entry" required style="height:40px;width:140px;height:40px;background-color:coral;border-color:green;border-radius:8px">
+	<option value="" disabled selected>Choose Semester</option>
+			<option value="a">First</option>
+            <option value="b">Second</option>
+        <option value="c">Third</option>
+            <option value="d">Fourth</option>
+        <option value="e">Fifth</option>
+            <option value="f">Sixth</option>
+        <option value="g">Seventh</option>
+            <option value="h">Eigth</option>
+        </select></br>
+    <br/>
+	<select name ="not" id="month" class="required-entry" required style="height:40px;width:150px;height:40px;background-color:coral;border-color:green;border-radius:8px">
+	<option value="" disabled selected>Choose Department</option>
+			<option value="a">Bio Technology</option>
+            <option value="b">Chemical</option>
+        <option value="c">Civil</option>
+            <option value="d">Computer Science</option>
+        <option value="e">Electronics</option>
+            <option value="f">Industrial & Production</option>
+        <option value="g">Instrumentation</option>
+            <option value="h">Mechanical</option>
+        <option value="h">Textile</option>
+        </select></br></br>-->
+
+    
+      </br></br>
+     
+  </div>
+
+
+
+  <script>
+   function adddata(n1,n2,n3,n4,n5,n6,n7,a,b,c)
+{
+  var config = {
+    apiKey: "AIzaSyAKzW0Gl5r5Gy6eqIk97fDIB0oB66WQOEY",
+    authDomain: "maruti-ba45e.firebaseapp.com",
+    databaseURL: "https://maruti-ba45e.firebaseio.com",
+    projectId: "maruti-ba45e",
+    storageBucket: "maruti-ba45e.appspot.com",
+    messagingSenderId: "127886238091"
+  };
+  firebase.initializeApp(config);
+    var userDataRef=firebase.database().ref("users");
+  userDataRef.once("value").then(function(snapshot) {
+  snapshot.forEach(function(childSnapshot) {
+  var key = childSnapshot.key;
+  var rn = childSnapshot.val();
+      var rn2=childSnapshot.val().B;
+      if(rn2==n3)
+      {userDataRef.child(key).push ({
+   "Date":n1,
+   "Purpose":n2,
+          "Day":a,
+          "Timefrom":b,
+          "Timeto":c,
+          
+  });}
+      else if(rn2==n4)
+      {userDataRef.child(key).push ({
+   "Date":n1,
+   "Purpose":n2,
+          "Day":a,
+          "Timefrom":b,
+          "Timeto":c,
+  });}
+      else if(rn2==n5)
+      {userDataRef.child(key).push ({
+   "Date":n1,
+   "Purpose":n2,
+          "Day":a,
+          "Timefrom":b,
+          "Timeto":c,
+  });}
+     else if(rn2==n6)
+      {userDataRef.child(key).push ({
+   "Date":n1,
+   "Purpose":n2,
+          "Day":a,
+          "Timefrom":b,
+          "Timeto":c,
+  });} 
+    else if(rn2==n7)
+      {userDataRef.child(key).push ({
+   "Date":n1,
+   "Purpose":n2,
+          "Day":a,
+          "Timefrom":b,
+          "Timeto":c,
+  });}
+  });});
+  alert("Data Successfully Entered\nWait for 10 seconds and then reload the page (ctrl+r) to continue.");}
+  
+</script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

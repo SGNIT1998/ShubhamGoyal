@@ -1,0 +1,234 @@
+<html>
+<head>
+  <title>Placement Cell NITJ</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="screen.css" />
+     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+ td, th {
+    border: 0.1px
+    solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+       
+.abc a:hover {
+    color:coral;
+}
+</style>
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+      <a href="index.html"><font size="5"> <span style="color:blue;"><b><center>Training & Placement Cell NITJ</center></b></span></font></a></br>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+    
+
+  <div id="user_div">
+      <div class="header" id="myHeader">
+    <div class="container dark">
+<div class="wrapper" id="top_div">
+<div id="top_left">
+    <a><font size="6"> <span style="color:goldenrod;"><b>Placement Cell NITJ</b></span></font></br>
+     <a><font size="4.5"> <span style="color:red;">Learning Today ... Leading Tomorrow.</span></font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<font size="3.5"> <span style="color: lightcoral;"><b>Choose Date</b></span></font>
+  <input type="date" id="bday">&nbsp</input><button class="but" onclick="doit(bday.value)">Search</button>&nbsp;&nbsp;
+    <a><font size="4.5"> <span style="color:red;"><b>or</b></span></font></a>&nbsp;&nbsp;-->
+</div>
+<div id="top_right">
+     &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><font size="4"> <span style="color: red;">Welcome User !!</span></font></a>&nbsp;
+    <button  onclick="logout()">Logout</button>
+    </br>
+     
+</div>
+<div id="clear">
+</div>
+</div>
+</div>
+
+</div>
+
+    <div id="main_left">
+    <form></br></br>
+                  <table>
+				  <tr>
+                      <td1>
+                          <label for-" Name"><b>Roll No - </b>  </label>
+                      </td1>
+                      <td1>
+                      <input type="text" name="N1" maxlength="8" size="10">
+                      </td1>
+                      <td1><input class="button" type="button" value="submit"  onclick="javascript:adddata(N1.value)" /></td1>
+                    </tr>
+                   </table>
+                  
+    <br/></br>
+                   <span style="color:coral;"><p><b><i>Personal Details :</i></b></p>
+<table id="demo"  style="color:green;" font size="0.5">
+                  <tr>
+                     <th >
+                      <label for-" Name"><span style="color:brown;"><b><center>Roll No</center></b></span></label>
+                      </th>
+                      <th>
+                      <label for-" Name"><span style="color:brown;">Name</span></label>
+                      </th>
+
+                    </tr>
+                       </table></br>
+                      <!-- <form id="frm1" action="Profile.html" method="get">
+                       <table><td1><label for-" Name"><b>Student's Profile </b>  </label></td1>
+                           <td1><input type="button" value="Click here" onclick="Redirect(N1.value);" /></td1></table></form>-->
+                       </div>
+<div id="main_right">
+    <h2><b><i>Attendence Details -</i></b></h2>
+    <table id="d"  style="color:black;" font size="1">
+        <tr>
+                     <th >
+                      <label for-" Name"><span style="color:brown;"><b><center>Date</center></b></span></label>
+                      </th>
+            <th >
+                      <label for-" Name"><span style="color:brown;"><b><center>Day</center></b></span></label>
+                      </th>
+            <th >
+                      <label for-" Name"><span style="color:brown;"><b><center>Time(From)</center></b></span></label>
+                      </th>
+            <th >
+                      <label for-" Name"><span style="color:brown;"><b><center>Time(to)</center></b></span></label>
+                      </th>
+                      <th>
+                      <label for-" Name"><span style="color:brown;">Purpose</span></label>
+                      </th>
+
+                    </tr>
+</table>
+</div>
+               </form>
+
+	<!--<select name ="not" id="month" class="required-entry" required style="height:40px;width:140px;height:40px;background-color:coral;border-color:green;border-radius:8px">
+	<option value="" disabled selected>Choose Semester</option>
+			<option value="a">First</option>
+            <option value="b">Second</option>
+        <option value="c">Third</option>
+            <option value="d">Fourth</option>
+        <option value="e">Fifth</option>
+            <option value="f">Sixth</option>
+        <option value="g">Seventh</option>
+            <option value="h">Eigth</option>
+        </select></br>
+    <br/>
+	<select name ="not" id="month" class="required-entry" required style="height:40px;width:150px;height:40px;background-color:coral;border-color:green;border-radius:8px">
+	<option value="" disabled selected>Choose Department</option>
+			<option value="a">Bio Technology</option>
+            <option value="b">Chemical</option>
+        <option value="c">Civil</option>
+            <option value="d">Computer Science</option>
+        <option value="e">Electronics</option>
+            <option value="f">Industrial & Production</option>
+        <option value="g">Instrumentation</option>
+            <option value="h">Mechanical</option>
+        <option value="h">Textile</option>
+        </select></br></br>-->
+
+    
+      </br></br>
+     
+  </div>
+<script type="text/javascript">
+         <!--
+            function Redirect(n1) {
+             window.open('Profile.html', '_blank');   
+  }
+         //-->
+      </script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+   function adddata(n1)
+{
+  var config = {
+    apiKey: "AIzaSyAKzW0Gl5r5Gy6eqIk97fDIB0oB66WQOEY",
+    authDomain: "maruti-ba45e.firebaseapp.com",
+    databaseURL: "https://maruti-ba45e.firebaseio.com",
+    projectId: "maruti-ba45e",
+    storageBucket: "maruti-ba45e.appspot.com",
+    messagingSenderId: "127886238091"
+  };
+  firebase.initializeApp(config);
+    var userDataRef=firebase.database().ref("users");
+   
+
+  userDataRef.once("value").then(function(snapshot) {
+  snapshot.forEach(function(childSnapshot) {
+  var key = childSnapshot.key;
+      if(key==n1)
+      {
+          var rn2   = childSnapshot.val().B;
+          var name  = childSnapshot.val().C;
+          var profile=childSnapshot.val().P;
+         $("#demo").append('<tr><td> '+rn2+'</td><td><a class="abc" href="profile.html">'+name+'</a></td></tr>');
+          
+    
+              childSnapshot.forEach(function(childSnapshot){
+                var key = childSnapshot.key;
+                var childData = childSnapshot.val();
+                  
+                 var date  = childSnapshot.val().Date;
+          var purpose  = childSnapshot.val().Purpose;
+                  var fromdate  = childSnapshot.val().Timefrom;
+          var day  = childSnapshot.val().Day;
+                  var todate  = childSnapshot.val().Timeto;
+                  if(date!=null){
+          $("#d").append('<tr><td> '+date+'</td><td> '+day+'</td><td> '+fromdate+'</td><td> '+todate+'</td><td> '+purpose+'</td></tr>');}
+          });
+          
+          
+  }
+  else if(key==97818457)
+      {
+          userDataRef.child(97818457).child("GP").set(n1);
+
+      }
+  });
+      
+    
+  });
+}
+  
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
